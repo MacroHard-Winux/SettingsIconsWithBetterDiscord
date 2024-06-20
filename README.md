@@ -1,14 +1,11 @@
-[screenshot]:       https://cdn.discordapp.com/attachments/1142305515439923260/1151000047396339792/settingsicons.png
+[screenshot]:       https://github.com/MiniDiscordThemes/SettingsIcons/assets/8350274/7d68e35b-17c0-40e5-9605-84a4ddbba191
 
 [css-length]:       https://developer.mozilla.org/en-US/docs/Web/CSS/length
 [discord]:          https://discord.gg/uy8nKQVatp
 
 [Vencord]:          https://github.com/Vendicated/Vencord
 
-[shield-donate]:    https://img.shields.io/badge/Donate-ko--fi-orange?style=flat-square&logo=kofi&logoColor=orange
-[ko-fi]:            https://ko-fi.com/saltssaumure "Buy me a coffee!"
-
-[shield-bd-dl]:     https://img.shields.io/github/downloads/MiniDiscordThemes/SettingsIcons/SettingsIcons.theme.css?color=purple&label=Downloads&style=flat-square
+[shield-vc-dl]:     https://img.shields.io/github/downloads/MiniDiscordThemes/SettingsIcons/SettingsIcons.theme.css?color=purple&label=Downloads&style=flat-square
 [shield-repo-size]: https://img.shields.io/github/repo-size/MiniDiscordThemes/SettingsIcons?label=Repository&style=flat-square "Total size"
 
 [github]:           https://github.com/MiniDiscordThemes/SettingsIcons
@@ -16,19 +13,10 @@
 [license]:          https://github.com/MiniDiscordThemes/SettingsIcons/blob/main/LICENSE
 [.theme.css]:       https://github.com/MiniDiscordThemes/SettingsIcons/blob/main/SettingsIcons.theme.css
 
-[si]:               https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/SettingsIcons
-[si-author]:        https://github.com/mwittrien
-[si-license]:       https://github.com/mwittrien/BetterDiscordAddons/blob/master/LICENSE
-
-[ionicons]:         https://github.com/ionic-team/ionicons
-[ionicons-author]:  https://github.com/ionic-team
-[ionicons-license]: https://github.com/ionic-team/ionicons/blob/main/LICENSE
-
-[release-bd-gh]:    https://github.com/MiniDiscordThemes/SettingsIcons/releases/latest/download/SettingsIcons.theme.css "Get latest release"
+[release-vc-gh]:    https://github.com/MiniDiscordThemes/SettingsIcons/releases/latest/download/SettingsIcons.theme.css "Get latest release"
 
 # SettingsIcons Discord Theme
-[![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
-[![BetterDiscord GitHub downloads][shield-bd-dl]][release-bd-gh]
+[![Vencord GitHub downloads][shield-vc-dl]][release-vc-gh]
 [![Total repository size][shield-repo-size]][github]
 
 ***Adds icons to Discord settings, for use with Vencord plugin ThemeAttributes.***
@@ -36,28 +24,32 @@
 ![Screenshot of SettingsIcons applied to Vencord settings][screenshot]
 
 ## Installation
+<details><summary>Click to expand</summary>
 
-### [Vencord][Vencord]
+⚠️ This theme is designed for use with [Vencord][Vencord]; other client mods are not supported.
+
 Enable the `ThemeAttributes` plugin in `Settings` > `Vencord` > `Plugins`.
-#### Local
+### Local
 1. Download `SettingsIcons.theme.css`:
-    - [GitHub][release-bd-gh]
+    - [GitHub][release-vc-gh]
 2. Place the file in the themes folder:
     - `Settings` > `Vencord` > `Themes` > `Local Themes` > `Open Themes Folder`
 3. Click `Load missing Themes` and toggle on the theme card.
-#### Online
+### Online
 1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
     - `https://minidiscordthemes.github.io/SettingsIcons/SettingsIcons.theme.css`
+</details>
 
 ## Customisation
 
-| Description                    | Variable name    | Valid values              | Default value |
-| ------------------------------ | ---------------- | ------------------------- | ------------- |
-| Enable SettingsIcon            | `--settingsicon` | `1` (on) or `0` (off)     | `1`           |
-| Icon size                      | `--si-size`      | Any [length][css-length]. | `18px`        |
-| Distance between icon and text | `--si-gap`       | Any [length][css-length]. | `14px`        |
+| Variable name     | Description               | Valid values              | Default value |
+| ----------------- | ------------------------- | ------------------------- | ------------- |
+| `--settingsicons` | Enable SettingsIcons      | `show` or `hide`          | `show`        |
+| `--si-size`       | Icon size                 | Any [length][css-length]. | `18px`        |
+| `--si-gap`        | Gap between icon and text | Any [length][css-length]. | `14px`        |
 
-### Vencord
+<details><summary>Click to expand</summary>
+
 #### Local
 1. `Open Themes Folder` in `Settings` > `Vencord` > `Themes` > `Local Themes`
 2. Open `SettingsIcons.theme.css` with your favourite text editor.
@@ -66,14 +58,25 @@ Enable the `ThemeAttributes` plugin in `Settings` > `Vencord` > `Plugins`.
 1. `Enable Custom CSS` in `Settings` > `Vencord` > `Vencord` and click `Open QuickCSS File`.
 2. Copy and paste lines 15-20 of [`SettingsIcons.theme.css`][.theme.css].
 3. Edit the variable values.
+</details>
 
 ## License
-[GNU General Public License v2.0][license]
-- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
+- Copyright (c) 2021-2023 Mirco Wittrien (original)
+- Copyright (c) 2023-2024 MiniDiscordThemes (modifications in this repository)
 
-### Includes
-- [SettingsIcons][si] by [DevilBro][si-author] - [GPL-2.0][si-license]
-- [Ionicons][ionicons] by [Ionic][ionicons-author] - [MIT][ionicons-license]
+This theme is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This theme is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU Affero General Public License][license] for more details.
+
+## Credits
+[si]:               https://github.com/mwittrien/BetterDiscordAddons/blob/master/Themes/_res/SettingsIcons.css
+[si-author]:        https://github.com/mwittrien
+
+[ionicons]:         https://github.com/ionic-team/ionicons
+[ionicons-author]:  https://github.com/ionic-team
+
+- [SettingsIcons][si] by [Mirco Wittrien (DevilBro)][si-author] - GPL-2.0 license
+- [Ionicons][ionicons] by [Ionic][ionicons-author] - MIT license
 
 ## Questions or suggestions?
 - Post [an issue][issues] on GitHub.
